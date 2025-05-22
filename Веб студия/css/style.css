@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navar-brand{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.navar-dark .navar-nav .nav-link {
+    transition: color 0.3s;
+}
+
+.navar-dark .navar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.prosto-video {
+    background:linear-gradient(135deg, #f5f7fa 0%);
+    padding: 60px 0;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 95%;
+}
+
+.product-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+ .card-img-top {
+    border-bottom: 1px solid #eee;
+}
+
+.product-card .badge {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.img-thumbnail {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.img-thumbnail:hover {
+    transform: scale(1.02);
+}
+
+.form-range::-webkit-skider-thumb {
+    background: #28a745;
+}
+
+.form-range::-moz-range-thumb {
+    background: #28a745;
+}
+.form-range::-ms-thumb {
+    background: #28a745;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.text-warning { 
+    color: #ffc107 !important;
+}
+
+footer {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.modal-content{
+    border: none;
+    border-radius: 10px;
+}
+
+.modal-body img {
+    max-height: 80vh;
+}
+
+@media (max-width: 768px) {
+    .prosto-video {
+        padding: 40px 0;
+    }
+    .product-card {
+        margin-bottom: 20px;
+    }
+
+    .navar-brand {
+        font-size: 1.2rem;
+    }
+}

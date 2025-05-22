@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio - Портфолио</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-code me-2"></i>WebStudio
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent"> 
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="portfolio.html">Портфолио</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#services">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#reviews">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contacts">Контакты</a>
+                </li>
+            </ul>
+            <div class="d-flex">
+                <button class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#callbackModal">
+                    <i class="me-1"></i> Войти
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Портфолио -->
+<section class="portfolio-section py-5">
+    <div class="container">
+        <h1 class="text-center mb-5">Наши работы</h1>
+        
+        <div class="text-center mb-4">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-outline-primary active">Все</button>
+                <button type="button" class="btn btn-outline-primary">Корпоративные сайты</button>
+                <button type="button" class="btn btn-outline-primary">Интернет-магазины</button>
+                <button type="button" class="btn btn-outline-primary">Лендинги</button>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Проект 1 -->
+            <div class="col-md-4">
+                <div class="card portfolio-card h-100">
+                    <img src="image/2.png" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title">Корпоративный сайт для ООО "ТехноПром"</h5>
+                        <p class="card-text">Многостраничный сайт с каталогом продукции, системой фильтрации и формой заявки.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            
+                            <a href="#" class="btn btn-sm btn-outline-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Проект 2 -->
+            <div class="col-md-4">
+                <div class="card portfolio-card h-100">
+                    <img src="image/3.png" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title">Интернет-магазин мебели</h5>
+                        <p class="card-text">Полнофункциональный магазин с корзиной, личным кабинетом и интеграцией с 1С.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+
+                            <a href="#" class="btn btn-sm btn-outline-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Проект 3 -->
+            <div class="col-md-4">
+                <div class="card portfolio-card h-100">
+                    <img src="image/4.png" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title">Сайт кофейни</h5>
+                        <p class="card-text">Современный сайт с меню в виде интерактивной галереи, онлайн-заказом на вынос, системой бронирования столиков</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            
+                            <a href="#" class="btn btn-sm btn-outline-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="text-center mt-5">
+            <button class="btn btn-primary">Показать еще</button>
+        </div>
+    </div>
+</section>
+
+<!-- Технологии -->
+<section class="technologies-section py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Технологии, которые мы используем</h2>
+        <div class="row text-center">
+            <div class="col-6 col-md-3 mb-4">
+                <div class="tech-item p-3">
+                    <i class="fab fa-html5 fa-3x text-danger mb-3"></i>
+                    <h5>HTML5</h5>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+                <div class="tech-item p-3">
+                    <i class="fab fa-css3-alt fa-3x text-primary mb-3"></i>
+                    <h5>CSS3</h5>
+                </div>
+            </div>
+            <!-- Еще технологии -->
+        </div>
+    </div>
+</section>
+
+<!-- Футер (такой же как на главной) -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <!-- Содержимое футера -->
+    </div>
+</footer>
+
+<!-- Модальное окно (такое же как на главной) -->
+<div class="modal fade" id="callbackModal" tabindex="-1">
+    <!-- Содержимое модального окна -->
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
